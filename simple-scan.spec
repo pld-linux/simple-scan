@@ -31,6 +31,10 @@ appropriate format.
 %setup -q
 
 %build
+%{__intltoolize}
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure \
 	--disable-schemas-install
 %{__make}
