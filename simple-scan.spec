@@ -16,6 +16,7 @@ BuildRequires:	glib2-devel
 BuildRequires:	gnome-doc-utils
 BuildRequires:	gtk+2-devel
 BuildRequires:	intltool
+BuildRequires:	rpmbuild(macros) >= 1.198
 BuildRequires:	sane-backends-devel
 BuildRequires:	udev-glib-devel
 Requires(post,preun):	GConf2
