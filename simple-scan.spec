@@ -2,25 +2,26 @@ Summary:	Simple scanning utility
 Name:		simple-scan
 Version:	2.31.1
 Release:	1
-License:	GPLv3+
+License:	GPL v3+
 Group:		Applications/Multimedia
 Source0:	http://launchpad.net/simple-scan/trunk/%{version}/+download/%{name}-%{version}.tar.gz
 # Source0-md5:	6e37cf889ce147e22a9130348c2e929d
 URL:		https://launchpad.net/simple-scan
-BuildRequires:	automake
-BuildRequires:	intltool
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	cairo-devel
 BuildRequires:	dbus-glib-devel
 BuildRequires:	glib2-devel
 BuildRequires:	gnome-doc-utils
 BuildRequires:	gtk+2-devel
+BuildRequires:	intltool
 BuildRequires:	sane-backends-devel
 BuildRequires:	udev-glib-devel
 Requires(post,preun):	GConf2
 Requires:	gnome-icon-theme
 Requires:	xdg-utils
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Simple Scan is an easy-to-use application, designed to let users
