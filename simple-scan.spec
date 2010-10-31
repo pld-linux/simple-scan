@@ -1,11 +1,11 @@
 Summary:	Simple scanning utility
 Name:		simple-scan
-Version:	2.32.0
+Version:	2.32.0.1
 Release:	1
 License:	GPL v3+
 Group:		Applications/Multimedia
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/simple-scan/2.32/%{name}-%{version}.tar.bz2
-# Source0-md5:	935573ee71250162c6ebdddc8ecd4676
+# Source0-md5:	9c0682f1aa6b338222b973fec6162e87
 URL:		https://launchpad.net/simple-scan
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
