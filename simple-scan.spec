@@ -11,11 +11,13 @@ BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	dbus-glib-devel
+BuildRequires:	gettext-devel
 BuildRequires:	gnome-common
 BuildRequires:	gnome-doc-utils
 BuildRequires:	gtk+2-devel >= 2:2.18.0
-BuildRequires:	libjpeg-devel
 BuildRequires:	intltool >= 0.40.0
+BuildRequires:	libjpeg-devel
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.198
 BuildRequires:	sane-backends-devel
 BuildRequires:	udev-glib-devel
