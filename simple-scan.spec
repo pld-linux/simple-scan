@@ -1,30 +1,34 @@
 Summary:	Simple scanning utility
 Name:		simple-scan
-Version:	2.32.0.1
+Version:	3.2.0
 Release:	1
 License:	GPL v3+
 Group:		Applications/Multimedia
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/simple-scan/2.32/%{name}-%{version}.tar.bz2
-# Source0-md5:	9c0682f1aa6b338222b973fec6162e87
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/simple-scan/3.2/%{name}-%{version}.tar.xz
+# Source0-md5:	dc82ae2bad7a44bb84c385a01614ec26
 URL:		https://launchpad.net/simple-scan
-BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	dbus-glib-devel
+BuildRequires:	cairo-devel
+BuildRequires:	colord-devel
+BuildRequires:	gdk-pixbuf2-devel
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-common
 BuildRequires:	gnome-doc-utils
-BuildRequires:	gtk+2-devel >= 2:2.18.0
+BuildRequires:	gtk+3-devel >= 3.0.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libjpeg-devel
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.198
 BuildRequires:	sane-backends-devel
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	udev-glib-devel
+BuildRequires:	vala >= 2:0.14.0
+BuildRequires:	xz
 BuildRequires:	zlib-devel
-Requires(post,preun):	GConf2
+Requires(post,postun):	glib2 >= 1:2.26.0
 Requires:	gnome-icon-theme
-Requires:	xdg-utils
+Suggests:	colord
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -41,7 +45,7 @@ appropriate format.
 %{__autoconf}
 %{__automake}
 %configure \
-	--disable-schemas-install \
+	--disable-schemas-compile \
 	--disable-silent-rules
 %{__make}
 
@@ -53,20 +57,20 @@ rm -rf $RPM_BUILD_ROOT
 
 %find_lang %{name} --with-gnome
 
-%post
-%gconf_schema_install simple-scan.schemas
-
-%preun
-%gconf_schema_uninstall simple-scan.schemas
-
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%glib_compile_schemas
+
+%postun
+%glib_compile_schemas
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS README ChangeLog
 %attr(755,root,root) %{_bindir}/simple-scan
 %{_mandir}/man1/simple-scan.1*
-%{_sysconfdir}/gconf/schemas/simple-scan.schemas
 %{_desktopdir}/simple-scan.desktop
+%{_datadir}/glib-2.0/schemas/org.gnome.SimpleScan.gschema.xml
 %{_datadir}/simple-scan
