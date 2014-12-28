@@ -12,7 +12,7 @@ BuildRequires:	automake
 BuildRequires:	cairo-devel
 BuildRequires:	colord-devel
 BuildRequires:	gdk-pixbuf2-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-common
 BuildRequires:	gnome-doc-utils
 BuildRequires:	gtk+3-devel >= 3.0.0
