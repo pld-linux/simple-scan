@@ -1,14 +1,15 @@
 Summary:	Simple scanning utility
 Name:		simple-scan
-Version:	3.14.2
+Version:	3.18.1
 Release:	1
 License:	GPL v3+
 Group:		Applications/Multimedia
-Source0:	https://launchpad.net/simple-scan/3.14/%{version}/+download/%{name}-%{version}.tar.xz
-# Source0-md5:	fa45b07aef08910d3c6435a2cb3a89ad
+Source0:	https://launchpad.net/simple-scan/3.18/%{version}/+download/%{name}-%{version}.tar.xz
+# Source0-md5:	269634eb3e5c17733413cf9f9bfb170e
 URL:		https://launchpad.net/simple-scan
+BuildRequires:	PackageKit-devel
 BuildRequires:	autoconf
-BuildRequires:	automake
+BuildRequires:	automake >= 1:1.11
 BuildRequires:	cairo-devel
 BuildRequires:	colord-devel
 BuildRequires:	gdk-pixbuf2-devel
@@ -18,11 +19,11 @@ BuildRequires:	gnome-common
 BuildRequires:	gnome-doc-utils
 BuildRequires:	gtk+3-devel >= 3.0.0
 BuildRequires:	intltool >= 0.40.0
+BuildRequires:	libgusb-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.198
 BuildRequires:	sane-backends-devel
-BuildRequires:	udev-glib-devel
 BuildRequires:	vala >= 2:0.22.0
 BuildRequires:	yelp-tools
 BuildRequires:	zlib-devel
