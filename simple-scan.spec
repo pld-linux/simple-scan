@@ -1,7 +1,7 @@
 Summary:	Simple scanning utility
 Name:		simple-scan
 Version:	3.28.0
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		Applications/Multimedia
 Source0:	https://download.gnome.org/sources/simple-scan/3.28/%{name}-%{version}.tar.xz
@@ -52,6 +52,8 @@ appropriate format.
 rm -rf $RPM_BUILD_ROOT
 
 %meson_install -C build
+
+%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/help/{ia,ku}
 
 %find_lang %{name} --with-gnome
 
