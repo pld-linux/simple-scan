@@ -1,12 +1,12 @@
 Summary:	Simple scanning utility
 Summary(pl.UTF-8):	Proste narzędzie do skanowania
 Name:		simple-scan
-Version:	3.38.1
+Version:	3.38.2
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications/Multimedia
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/simple-scan/3.38/%{name}-%{version}.tar.xz
-# Source0-md5:	932999f62b66c0644f7a5a620543745a
+Source0:	https://download.gnome.org/sources/simple-scan/3.38/%{name}-%{version}.tar.xz
+# Source0-md5:	60948f6a0118b22e1c9addd7d37a9560
 URL:		https://launchpad.net/simple-scan
 BuildRequires:	PackageKit-devel >= 1.1.5
 BuildRequires:	cairo-devel
