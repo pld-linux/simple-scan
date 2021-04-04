@@ -1,12 +1,12 @@
 Summary:	Simple scanning utility
 Summary(pl.UTF-8):	Proste narzędzie do skanowania
 Name:		simple-scan
-Version:	3.38.5
+Version:	40.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications/Multimedia
-Source0:	https://download.gnome.org/sources/simple-scan/3.38/%{name}-%{version}.tar.xz
-# Source0-md5:	9988530faaf97ef08c6d29b64846ba6b
+Source0:	https://download.gnome.org/sources/simple-scan/40/%{name}-%{version}.tar.xz
+# Source0-md5:	e1c0e2a4969c238f91f3e676d57950b7
 URL:		https://launchpad.net/simple-scan
 BuildRequires:	PackageKit-devel >= 1.1.5
 BuildRequires:	cairo-devel
@@ -17,6 +17,7 @@ BuildRequires:	glib2-devel >= 1:2.38
 BuildRequires:	gtk+3-devel >= 3.22
 BuildRequires:	itstool
 BuildRequires:	libgusb-devel >= 0.2.7
+BuildRequires:	libhandy1-devel >= 1.1.90
 BuildRequires:	libjpeg-devel
 BuildRequires:	libwebp-devel
 BuildRequires:	meson >= 0.37.1
@@ -37,6 +38,7 @@ Requires:	glib2 >= 1:2.38
 Requires:	hicolor-icon-theme
 Requires:	gtk+3 >= 3.22
 Requires:	libgusb >= 0.2.7
+Requires:	libhandy1 >= 1.1.90
 Suggests:	colord
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
