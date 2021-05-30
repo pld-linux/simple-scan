@@ -29,6 +29,7 @@ BuildRequires:	tar >= 1:1.22
 BuildRequires:	vala >= 2:0.22.0
 BuildRequires:	vala-colord
 BuildRequires:	vala-libgusb >= 0.2.7
+BuildRequires:	vala-libhandy1 >= 1.1.90
 BuildRequires:	yelp-tools
 BuildRequires:	xz
 BuildRequires:	zlib-devel
