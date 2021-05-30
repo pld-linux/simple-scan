@@ -1,12 +1,12 @@
 Summary:	Simple scanning utility
 Summary(pl.UTF-8):	Proste narzędzie do skanowania
 Name:		simple-scan
-Version:	40.0
+Version:	40.1
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications/Multimedia
 Source0:	https://download.gnome.org/sources/simple-scan/40/%{name}-%{version}.tar.xz
-# Source0-md5:	e1c0e2a4969c238f91f3e676d57950b7
+# Source0-md5:	cee304259e465b71cc9b983a7e421327
 URL:		https://launchpad.net/simple-scan
 BuildRequires:	PackageKit-devel >= 1.1.5
 BuildRequires:	cairo-devel
