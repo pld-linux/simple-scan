@@ -1,12 +1,12 @@
 Summary:	Simple scanning utility
 Summary(pl.UTF-8):	Proste narzędzie do skanowania
 Name:		simple-scan
-Version:	40.7
+Version:	42.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications/Multimedia
-Source0:	https://download.gnome.org/sources/simple-scan/40/%{name}-%{version}.tar.xz
-# Source0-md5:	3f565e8788b5b8262f2a11c9f8967196
+Source0:	https://download.gnome.org/sources/simple-scan/42/%{name}-%{version}.tar.xz
+# Source0-md5:	afb147a82cb483fda916ffdaeabcb5a8
 URL:		https://launchpad.net/simple-scan
 BuildRequires:	PackageKit-devel >= 1.1.5
 BuildRequires:	cairo-devel
@@ -14,13 +14,13 @@ BuildRequires:	colord-devel
 BuildRequires:	gdk-pixbuf2-devel >= 2.0
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.38
-BuildRequires:	gtk+3-devel >= 3.22
+BuildRequires:	gtk+3-devel >= 3.24
 BuildRequires:	itstool
 BuildRequires:	libgusb-devel >= 0.2.7
-BuildRequires:	libhandy1-devel >= 1.1.90
+BuildRequires:	libhandy1-devel >= 1.5.0
 BuildRequires:	libjpeg-devel
 BuildRequires:	libwebp-devel
-BuildRequires:	meson >= 0.37.1
+BuildRequires:	meson >= 0.38.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.736
@@ -29,7 +29,7 @@ BuildRequires:	tar >= 1:1.22
 BuildRequires:	vala >= 2:0.22.0
 BuildRequires:	vala-colord
 BuildRequires:	vala-libgusb >= 0.2.7
-BuildRequires:	vala-libhandy1 >= 1.1.90
+BuildRequires:	vala-libhandy1 >= 1.5.0
 BuildRequires:	yelp-tools
 BuildRequires:	xz
 BuildRequires:	zlib-devel
@@ -37,9 +37,9 @@ Requires(post,postun):	glib2 >= 1:2.38
 Requires:	PackageKit >= 1.1.5
 Requires:	glib2 >= 1:2.38
 Requires:	hicolor-icon-theme
-Requires:	gtk+3 >= 3.22
+Requires:	gtk+3 >= 3.24
 Requires:	libgusb >= 0.2.7
-Requires:	libhandy1 >= 1.1.90
+Requires:	libhandy1 >= 1.5.0
 Suggests:	colord
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
