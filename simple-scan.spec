@@ -20,7 +20,7 @@ BuildRequires:	libgusb-devel >= 0.2.7
 BuildRequires:	libhandy1-devel >= 1.5.0
 BuildRequires:	libjpeg-devel
 BuildRequires:	libwebp-devel
-BuildRequires:	meson >= 0.38.0
+BuildRequires:	meson >= 0.40.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.736
