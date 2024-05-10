@@ -1,12 +1,13 @@
+# TODO: use gtk4-update-icon-cache
 Summary:	Simple scanning utility
 Summary(pl.UTF-8):	Proste narzędzie do skanowania
 Name:		simple-scan
-Version:	44.0
-Release:	2
+Version:	46.0
+Release:	1
 License:	GPL v3+
 Group:		X11/Applications/Multimedia
-Source0:	https://download.gnome.org/sources/simple-scan/44/%{name}-%{version}.tar.xz
-# Source0-md5:	c64648c3190d27885e9d8aed70f70005
+Source0:	https://download.gnome.org/sources/simple-scan/46/%{name}-%{version}.tar.xz
+# Source0-md5:	5ae9ca4d4c59520736c11a2eb427502d
 URL:		https://launchpad.net/simple-scan
 BuildRequires:	PackageKit-devel >= 1.1.5
 BuildRequires:	cairo-devel
@@ -14,10 +15,10 @@ BuildRequires:	colord-devel
 BuildRequires:	gdk-pixbuf2-devel >= 2.0
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.38
-BuildRequires:	gtk+3-devel >= 3.24
+BuildRequires:	gtk4-devel >= 4.10.0
 BuildRequires:	itstool
+BuildRequires:	libadwaita-devel >= 1.2.0
 BuildRequires:	libgusb-devel >= 0.2.7
-BuildRequires:	libhandy1-devel >= 1.5.0
 BuildRequires:	libjpeg-devel
 BuildRequires:	libwebp-devel
 BuildRequires:	meson >= 0.40.0
@@ -37,9 +38,9 @@ Requires(post,postun):	glib2 >= 1:2.38
 Requires:	PackageKit >= 1.1.5
 Requires:	glib2 >= 1:2.38
 Requires:	hicolor-icon-theme
-Requires:	gtk+3 >= 3.24
+Requires:	gtk4 >= 4.10.0
+Requires:	libadwaita >= 1.2.0
 Requires:	libgusb >= 0.2.7
-Requires:	libhandy1 >= 1.5.0
 Suggests:	colord
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -86,7 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc NEWS README.md
 %attr(755,root,root) %{_bindir}/simple-scan
 %{_datadir}/glib-2.0/schemas/org.gnome.SimpleScan.gschema.xml
-%{_datadir}/metainfo/simple-scan.appdata.xml
+%{_datadir}/metainfo/org.gnome.SimpleScan.appdata.xml
 %{_desktopdir}/simple-scan.desktop
 %{_iconsdir}/hicolor/scalable/apps/org.gnome.SimpleScan.svg
 %{_iconsdir}/hicolor/symbolic/apps/org.gnome.SimpleScan-symbolic.svg
