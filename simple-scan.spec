@@ -29,6 +29,7 @@ BuildRequires:	sane-backends-devel
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	vala >= 2:0.22.0
 BuildRequires:	vala-colord
+BuildRequires:	vala-libadwaita >= 1.2.0
 BuildRequires:	vala-libgusb >= 0.2.7
 BuildRequires:	vala-libhandy1 >= 1.5.0
 BuildRequires:	yelp-tools
