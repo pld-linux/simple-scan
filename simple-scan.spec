@@ -24,7 +24,7 @@ BuildRequires:	libwebp-devel
 BuildRequires:	meson >= 0.40.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	sane-backends-devel
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	vala >= 2:0.22.0
