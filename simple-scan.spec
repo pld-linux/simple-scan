@@ -8,7 +8,7 @@ License:	GPL v3+
 Group:		X11/Applications/Multimedia
 Source0:	https://download.gnome.org/sources/simple-scan/46/%{name}-%{version}.tar.xz
 # Source0-md5:	5ae9ca4d4c59520736c11a2eb427502d
-URL:		https://launchpad.net/simple-scan
+URL:		https://apps.gnome.org/SimpleScan/
 BuildRequires:	PackageKit-devel >= 1.1.5
 BuildRequires:	cairo-devel
 BuildRequires:	colord-devel
